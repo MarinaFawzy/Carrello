@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_margin="10dp"
+        android:layout_height="100dp"
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dresses" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/buy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Name: "
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+
+        android:layout_marginStart="5dp"
+
+        android:text="price: "
+
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+    <TextView
+        android:id="@+id/tquantaty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+android:layout_marginStart="5dp"
+        android:text="quantity: "
+
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/tprice" />
+
+
+    <TextView
+        android:id="@+id/edtname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edtprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="8dp"
+
+        android:inputType="text"
+
+
+        android:text="TextView"
+
+        android:textSize="20dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/tquantaty"
+
+        app:layout_constraintStart_toEndOf="@+id/tprice"
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+    <TextView
+        android:id="@+id/quttt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="10dp"
+
+
+        android:layout_marginTop="10dp"
+
+        android:inputType="number"
+
+
+        android:text="text:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/tquantaty"
+        app:layout_constraintTop_toBottomOf="@+id/edtprice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

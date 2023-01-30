@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.convertapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ConvertApp">
+        <activity
+            android:name=".userorder.userorders"
+            android:exported="false" />
+        <activity
+            android:name=".Showorders.feedback"
+            android:exported="false" />
+
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBf5a-9IsVJTMFnIt22p7HsAkWOvO_-Jyk" />
+
+        <activity
+            android:name=".admin.Admincontrol"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Chart"
+            android:exported="false" />
+        <activity
+            android:name=".Userhome.userhome"
+            android:exported="false" />
+        <activity
+            android:name=".Showorders.orderlist"
+            android:exported="false" />
+
+        <activity
+            android:name=".shoppingcart.order"
+            android:exported="false" />
+        <activity
+            android:name=".prduct.updateproduct"
+            android:exported="false" />
+        <activity
+            android:name=".shoppingcart.cartlist"
+            android:exported="false" />
+        <activity
+            android:name=".Showorders.map"
+            android:exported="false" />
+
+        <activity
+            android:name=".loginandregisteration.forgetcode"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregisteration.changepass"
+            android:exported="false" />
+
+        <activity
+            android:name=".prduct.productlist"
+            android:exported="false" />
+        <activity
+            android:name=".Category.Addcategory"
+            android:exported="false" />
+        <activity
+            android:name=".prduct.Addproduct"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregisteration.registration"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregisteration.forgetpassword"
+            android:exported="false" />
+
+        <activity
+            android:name=".Category.updatescategory"
+            android:exported="false" />
+        <activity
+            android:name=".Category.Categorylist"
+            android:exported="true" />
+        <activity
+            android:name=".loginandregisteration.login"
+            android:exported="true" />
+
+        <activity
+            android:name=".loginandregisteration.start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

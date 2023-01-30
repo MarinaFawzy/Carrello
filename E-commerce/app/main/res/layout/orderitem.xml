@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+
+
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+android:layout_margin="10dp"
+
+        android:text="User      :"
+
+        android:textSize="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="10dp"
+        android:text="OrderId:"
+        android:layout_margin="10dp"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tname" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingEnd="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+
+
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orderid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+
+        android:paddingEnd="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tname"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+
+        android:text="Date:"
+android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order" />
+
+    <TextView
+        android:id="@+id/orderdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:paddingEnd="10dp"
+
+        android:text="Textview"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/tname"
+
+        app:layout_constraintTop_toBottomOf="@+id/orderid" />
+
+    <TextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+
+        android:text="product buy: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/orderdate"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <TextView
+        android:id="@+id/productorder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:paddingEnd="10dp"
+
+        android:text="Textview"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toEndOf="@+id/product"
+        app:layout_constraintTop_toBottomOf="@+id/orderdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
